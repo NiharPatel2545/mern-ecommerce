@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "../lib/axios";
-
+console.log("Stripe key:", import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 
 const OrderSummary = () => {
@@ -23,10 +23,7 @@ const OrderSummary = () => {
 		});
 
 		const session = res.data;
-		const result = await stripe.redirectToCheckout({
-			sessionId: session.id,
-		});
-
+		window.location.href = session.url;
 		if (result.error) {
 			console.error("Error:", result.error);
 		}
