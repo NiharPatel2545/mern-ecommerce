@@ -3,6 +3,7 @@
 ![Demo App](/frontend/public/store-screenshot.png)
 ![Demo App](/frontend/public/store-admin-screenshot.png)
 
+Check out the deployed version of the project [here](https://mern-ecommerce-8nvr.onrender.com)
 
 About This Course:
 
