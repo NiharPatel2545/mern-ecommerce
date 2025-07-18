@@ -24,7 +24,7 @@ const LoginPage = () => {
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8 }}
 			>
-				<h2 className='mt-6 text-center text-3xl font-extrabold text-emerald-400'>Create your account</h2>
+				<h2 className='mt-6 text-center text-3xl font-extrabold text-blue-400'>Create your account</h2>
 			</motion.div>
 
 			<motion.div
@@ -80,12 +80,12 @@ const LoginPage = () => {
 						</div>
 
 						<button
-							type='submit'
-							className='w-full flex justify-center py-2 px-4 border border-transparent 
-							rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600
-							 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2
-							  focus:ring-emerald-500 transition duration-150 ease-in-out disabled:opacity-50'
-							disabled={loading}
+						  type='submit'
+						  className='w-full flex justify-center py-2 px-4 border border-transparent 
+						    rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 
+						    hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 
+						    focus:ring-blue-500 transition duration-150 ease-in-out disabled:opacity-50'
+						  disabled={loading}
 						>
 							{loading ? (
 								<>
@@ -103,7 +103,7 @@ const LoginPage = () => {
 
 					<p className='mt-8 text-center text-sm text-gray-400'>
 						Not a member?{" "}
-						<Link to='/signup' className='font-medium text-emerald-400 hover:text-emerald-300'>
+						<Link to='/signup' className='font-medium text-blue-400 hover:text-blue-300'>
 							Sign up now <ArrowRight className='inline h-4 w-4' />
 						</Link>
 					</p>
